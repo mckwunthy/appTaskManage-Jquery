@@ -1,0 +1,10 @@
+/* add fontawesone link */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/* add framework */
+@import url(/assets/css/MyFrameworkCSS/framework.css);
+@import url(/assets/css/MyFrameworkCSS/color.css);
+@import url(/assets/css/MyFrameworkCSS/size.css);
+
+/* add style sheet */
+@import url(/assets/css/style.css);

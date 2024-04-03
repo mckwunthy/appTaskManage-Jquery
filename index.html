@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>APP Gestion de Tâches</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<script src="/assets/js/librairie/jquery/jquery.3.7.1.js"></script>
+		<script src="/assets/js/librairie/storageIndexDB/LocalDatabase.js"></script>
+		<script src="/assets/js/librairie/storageIndexDB/script.js"></script>
+		<script src="/assets/js/app.js"></script>
+	</head>
+	<body>
+		<div id="app" class="">
+			<h1>tasks manager</h1>
+			<div class="container">
+				<div class="add-tast-manage relative flex flex-column gap-10">
+					<div class="add-task-bt">
+						<button>add task</button>
+					</div>
+					<div class="filter-check-box absolute">
+						<h4>tasks filter</h4>
+						<form action="#">
+							<input type="radio" name="filter-box" checked value="all" id="filter-all"><label for="filter-all">All</label>
+							<input type="radio" name="filter-box" value="done" id="filter-done"><label for="filter-done">Done</label>
+							<input type="radio" name="filter-box" value="in-progress" id="filter-progress"><label for="filter-progress">in progress</label>
+						</form>
+					</div>
+					<div class="layout absolute none"></div>
+					<!--add item box-->
+					<div class="add-task-item absolute none">
+						<div class="close-bt">
+							<i class="fa-regular fa-circle-xmark"></i>
+						</div>
+						<form action="#">
+							<label for="tastTitle">Title :</label>
+							<input type="text" id="taskTitleAdd" placeholder="Task title" minlength="3" maxlength="50"><br>
+							<input type="submit" id="submitAddBt" value="add" disabled>
+							<input type="reset" id="resetAddBt" value="reset" class="none">
+						</form>
+					</div>
+					<!--update item box-->
+					<div class="update-task-item absolute none">
+						<div class="close-bt">
+							<i class="fa-regular fa-circle-xmark"></i>
+						</div>
+						<form action="#">
+							<label for="tastTitle">Title :</label>
+							<input type="text" id="taskTitleUpdate" placeholder="Task title" minlength="3" maxlength="50"><br>
+							<input type="hidden" id="hiddenId" value="">
+							<input type="hidden" id="hiddenStatus" value="">
+							<input type="submit" id="submitUpdate" value="update" class="disableFalse">
+						</form>
+					</div>
+				</div>
+				<!--display items-->
+				<div class="display-task flex flex-column gap-30">
+					<div class="task-item">
+						<div class="title-and-comment">task title i'm going to do goes here</div>
+						<div class="delete-task">delete</div>
+						<div class="update-task">update</div>
+						<div class="done-task">done</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

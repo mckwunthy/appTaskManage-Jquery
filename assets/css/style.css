@@ -1,0 +1,221 @@
+/******APP******/
+#app {
+    width: 700px;
+    margin: 20px auto;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color-white);
+    text-shadow: 2px 1px 1px var(--main-color-black);
+}
+
+/******container******/
+.container {
+    padding: 10px;
+}
+
+/******add task manage******/
+.add-tast-manage {
+    width: 500px;
+    /* height: 270px; */
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.add-tast-manage .add-task-bt {
+    /* border: 1px solid #eee; */
+    width: 120px;
+    height: 50px;
+}
+
+.add-tast-manage .add-task-bt button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--main-color-white);
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 2px 1px var(--main-color-black);
+    text-shadow: 2px 2px 2px var(--main-color-black);
+    color: var(--main-color-white);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/******add task filter-check-box******/
+
+.filter-check-box {
+    top: 5px;
+    right: 5px;
+}
+
+.filter-check-box h4 {
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.filter-check-box form {
+    text-transform: capitalize;
+    /* font-weight: bold; */
+}
+
+/******add task manage : add-task-item******/
+.layout {
+    width: 700px;
+    height: 615px;
+    background-color: var(--main-color);
+    top: 0;
+    left: -90px;
+    opacity: 0.5;
+}
+
+.add-task-item,
+.update-task-item {
+    /* border: 1px solid red; */
+    border: 1px solid var(--main-color);
+    width: 500px;
+    height: 130px;
+    margin: 150px auto;
+    padding: 20px 10px 10px 10px;
+    background-color: var(--main-color-white);
+    z-index: 9999;
+}
+
+.close-bt {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.close-bt i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.add-task-item form label,
+.update-task-item form label {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.add-task-item input#taskTitleAdd,
+.update-task-item input#taskTitleUpdate {
+    width: 360px;
+    height: 40px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    border-radius: 15px 0 15px 0;
+}
+
+.add-task-item input[type=submit],
+.update-task-item input[type=submit] {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    color: var(--main-color-white);
+    /* background-color: var(--main-color); */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px var(--main-color-black);
+}
+
+.disableFalse {
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: none;
+}
+
+input:invalid {
+    background-color: var(--main-color-red);
+}
+
+/******display-task******/
+.display-task {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 20px;
+    background-color: var(--main-color-white);
+}
+
+.emptyTask {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.task-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-around; */
+    border: 1px solid #efefef;
+    padding: 5px 0 5px 5px;
+}
+
+.title-and-comment {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.title-and-comment {
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.delete-task,
+.task-item div:nth-child(4),
+.update-task {
+    padding: 5px;
+    color: var(--main-color-white);
+    font-weight: bold;
+    cursor: pointer;
+    width: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px var(--main-color-black);
+
+}
+
+.delete-task {
+    background-color: var(--main-color-red);
+}
+
+.update-task {
+    background-color: var(--main-color-gold);
+}
+
+.task-item div:nth-child(4) {
+    background-color: var(--main-color);
+}
+
+.false {
+    background-color: var(--main-color-white);
+}
+
+.true {
+    background-color: #efefef;
+    color: var(--main-color-gray);
+}
+
+#app div .esc {
+    background-color: #efefef;
+}
+
+/******APP******/
+/******APP******/
